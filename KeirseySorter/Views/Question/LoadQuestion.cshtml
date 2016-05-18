@@ -1,0 +1,97 @@
+﻿@model QuestionViewModel
+@using KeirseySorter.Models
+
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+
+@using (Html.BeginForm("LoadQuestion", "Question", FormMethod.Post))
+{
+
+    <br />
+    if (@Model != null && @Model.Id > 0)
+    {
+        @Html.HiddenFor(it => Model.Id)
+        @Html.HiddenFor(it => Model.Type)
+
+        <div class="col-lg-12 questionNum">
+            <h4>კითხვა N: @Model.OrderNo</h4>
+        </div>
+
+        <br />
+        <div class="col-lg-12 questionTxt">
+            <h4>@Model.Text</h4>
+        </div>
+
+        <br />
+        <div class="col-lg-12 ">
+            @if ((int)@Model.Type == 1)
+            {
+                for (var i = 0; i < Model.PicAnswers.Count; i++)
+                {
+
+                    var imagePath = "../../Content/PicAnswers/Q" + @Model.OrderNo + "/" + Model.PicAnswers[i].OrderNo + ".jpg";
+                    var imageAlt = "img" + Model.PicAnswers[i].OrderNo;
+
+                    <div class="col-lg-3">
+                        @Html.HiddenFor(it => Model.PicAnswers[i].Id)
+                        @Html.HiddenFor(it => Model.PicAnswers[i].KType)
+                        @Html.HiddenFor(it => Model.PicAnswers[i].Questionid)
+                        @Html.HiddenFor(it => Model.PicAnswers[i].OrderNo)
+                        @Html.CheckBoxFor(it => Model.PicAnswers[i].Checked)
+
+                        <img src="@imagePath" alt="@imageAlt" width="200" height="150" />
+
+                        @if (Model.PicAnswers[i].OrderNo % 4 == 0)
+                            {  <br /><br /><br /> }
+                    </div>
+                }
+            }
+            else
+            {
+                for (var i = 0; i < Model.TxtAnswers.Count; i++)
+                {
+                    <div class="col-lg-12">
+                        @Html.HiddenFor(it => Model.TxtAnswers[i].Id)
+                        @Html.HiddenFor(it => Model.TxtAnswers[i].KType)
+                        @Html.CheckBoxFor(it => Model.TxtAnswers[i].Checked)
+                        @Html.HiddenFor(it => Model.TxtAnswers[i].OrderNo)
+                        @Html.HiddenFor(it => Model.TxtAnswers[i].Questionid)
+                        @Html.HiddenFor(it => Model.TxtAnswers[i].Text)
+
+                        <span>&nbsp;&nbsp;@Model.TxtAnswers[i].Text</span>
+                        <br />
+                        <br />
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="col-lg-12 pull-left">
+            <label></label>
+        </div>
+
+        var nextButtonValue = @Model.Id != 7 ? "შემდეგი" : "დასრულება";
+        var prevButtonType = @Model.Id == 1 ? "hidden" : "submit";
+
+
+        <div class="col-lg-12 pull-left ">
+            <div class="pull-left prev">
+                <input id="Submit1" type="@prevButtonType" value="წინა" class="btn btn-default" name="prev" />
+            </div>
+            <div class="pull-right next">
+                <input id="Submit2" type="submit" value="@nextButtonValue" class="btn btn-default" name="next" />
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="col-lg-12 pull-left">
+            <h2>EmptyQuestion</h2>
+        </div>
+    }
+
+}
