@@ -47,3 +47,14 @@ textarea {
 .next {
     margin-right: 30px;
 }
+
+.grow img:hover {
+    /*width: 500px;
+     height: 500px;*/
+    position: relative;
+    z-index: 9999;
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -o-transform: scale(3);
+    transform: scale(3);
+}
