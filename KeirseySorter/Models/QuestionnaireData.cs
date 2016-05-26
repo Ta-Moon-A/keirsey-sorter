@@ -114,7 +114,7 @@ namespace KeirseySorter.Models
             new QuestionViewModel() {Id = 2,OrderNo = 2,Text = "რომელ ცნობილ ადამიანთან გააიგივებდით საკუთარ თავს?",Type = QuestionTypes.PicQuestion},
             new QuestionViewModel() {Id = 3,OrderNo = 3,Text = "ამოირჩიეთ თქვენი საყვარელი ცხოველი",Type = QuestionTypes.PicQuestion},
             new QuestionViewModel() {Id = 4,OrderNo = 4,Text = "ამოირჩიეთ თქვენთვის მისაღები ორნამენტი",Type = QuestionTypes.PicQuestion},
-            new QuestionViewModel() {Id = 5,OrderNo = 5,Text = "ამოირჩიეთ ფეისბუქ ატივობა",Type = QuestionTypes.TxtQuestion}
+            new QuestionViewModel() {Id = 5,OrderNo = 5,Text = "ამოირჩიეთ თქვენთვის მისაღები ფეისბუქ ატივობა",Type = QuestionTypes.TxtQuestion}
         };
 
         public static PicAnswerViewModel[] PicAnswerList { get; } =
@@ -194,22 +194,22 @@ namespace KeirseySorter.Models
 
         public static TxtAnswerViewModel[] TxtAnswerList { get; } =
           {
-            new TxtAnswerViewModel {Id = 21,OrderNo = 1,  Questionid = 5, Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",  KType = KeirseyTypes.ESFJ},
-            new TxtAnswerViewModel {Id = 22,OrderNo = 2,  Questionid = 5, Text = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of  ",  KType = KeirseyTypes.ISFJ},
-            new TxtAnswerViewModel {Id = 23,OrderNo = 3,  Questionid = 5, Text = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered ",  KType = KeirseyTypes.ESTJ},
-            new TxtAnswerViewModel {Id = 24,OrderNo = 4,  Questionid = 5, Text = "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested",  KType = KeirseyTypes.ISTJ},
-            new TxtAnswerViewModel {Id = 89,OrderNo = 5,  Questionid = 5, Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",  KType = KeirseyTypes.ESFP},
-            new TxtAnswerViewModel {Id = 90,OrderNo = 6,  Questionid = 5, Text = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of  ",  KType = KeirseyTypes.ISFP},
-            new TxtAnswerViewModel {Id = 91,OrderNo = 7, Questionid = 5, Text = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered ",  KType = KeirseyTypes.ESTP},
-            new TxtAnswerViewModel {Id = 92,OrderNo = 8, Questionid = 5, Text = "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested",  KType = KeirseyTypes.ISTP},
-            new TxtAnswerViewModel {Id = 93,OrderNo = 9, Questionid = 5, Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been",  KType = KeirseyTypes.ENFP},
-            new TxtAnswerViewModel {Id = 94,OrderNo = 10, Questionid = 5, Text = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of  ", KType = KeirseyTypes.INFP},
-            new TxtAnswerViewModel {Id = 95,OrderNo = 11, Questionid = 5, Text = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered ", KType = KeirseyTypes.ENFJ},
-            new TxtAnswerViewModel {Id = 96,OrderNo = 12, Questionid = 5, Text = "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested", KType = KeirseyTypes.INFJ},
-            new TxtAnswerViewModel {Id = 97,OrderNo = 13, Questionid = 5, Text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been", KType = KeirseyTypes.ENTP},
-            new TxtAnswerViewModel {Id = 98,OrderNo = 14, Questionid = 5, Text = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of  ", KType = KeirseyTypes.INTP},
-            new TxtAnswerViewModel {Id = 99,OrderNo = 15, Questionid = 5, Text = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered ", KType = KeirseyTypes.ENTJ},
-            new TxtAnswerViewModel {Id = 100,OrderNo = 16, Questionid = 5, Text = "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested",KType = KeirseyTypes.INTJ},
+            new TxtAnswerViewModel {Id = 21,OrderNo = 1,  Questionid = 5, Text = "რამდენიმე წლის განმავლობაში პერიოდულად ტვირთავს თავისი ქორწილის ფოტოებს",  KType = KeirseyTypes.ESFJ},
+            new TxtAnswerViewModel {Id = 22,OrderNo = 2,  Questionid = 5, Text = "მორჩილად ალაიქებს ყველა თქვენ სტატუსს, რომელსაც ბოლო 10 წუთის განმავლობაში არ გამოუწვევია სხვების რეაქცია.",  KType = KeirseyTypes.ISFJ},
+            new TxtAnswerViewModel {Id = 23,OrderNo = 3,  Questionid = 5, Text = "პროფილის ფოტოდ უყენია სურათი, რომელზეც ჩანს მხოლოდ მისი სახე, თითქოს ამ ფოტოს ხედავდეს მხოლოდ მისი პოტენციური დამქირავებელი.",  KType = KeirseyTypes.ESTJ},
+            new TxtAnswerViewModel {Id = 24,OrderNo = 4,  Questionid = 5, Text = "პოსტავს ინტერნეტში აღმოჩენილ ბევრ სარკასტულ ფოტოს, რომელიც გამოხატავს კაცობრიობის  საქციელით გამოწვეულ მის იმედგაცრუებას",  KType = KeirseyTypes.ISTJ},
+            new TxtAnswerViewModel {Id = 89,OrderNo = 5,  Questionid = 5, Text = "აგზავნის სხვადასხვა უცნაური წვეულების მოსაწვევებს განუწყვეტლივ რეჟიმში.",  KType = KeirseyTypes.ESFP},
+            new TxtAnswerViewModel {Id = 90,OrderNo = 6,  Questionid = 5, Text = "დღეში იმაზე მეტ  self ფოტოს იღებს, ვიდრე თქვენ მთელი ცხოვრების მანძილზე გადაგიღიათ.",  KType = KeirseyTypes.ISFP},
+            new TxtAnswerViewModel {Id = 91,OrderNo = 7, Questionid = 5, Text = "საკუთარ თავს ნიშნავს  მთვრალ მდგომარეობაში ბევრ ფოტოზე, რაც იწვევს ნათესავების  და ნაცნობების აღშფოთებას.",  KType = KeirseyTypes.ESTP},
+            new TxtAnswerViewModel {Id = 92,OrderNo = 8, Questionid = 5, Text = "დღის განმავლობაში რამდენჯერმე გიწვევს 'ქენდი ქრაშის სათამაშოდ' , მიუხედავად იმისა, რომ ბოლო რამდენიმე წლის განმავლობაში არცერთხელ გაგიხსნია მისი ლინკი.",  KType = KeirseyTypes.ISTP},
+            new TxtAnswerViewModel {Id = 93,OrderNo = 9, Questionid = 5, Text = "ენთუზიაზმით ცვლის თავისი ოჯახური მდგომარეობის/ადგილმდებარეობის/კარიერაში წინსვლის შესახებ ინფორმაციიას ყოველ 2-3 თვეში ერთხელ და იღებს ასობით ლაიქს.",  KType = KeirseyTypes.ENFP},
+            new TxtAnswerViewModel {Id = 94,OrderNo = 10, Questionid = 5, Text = "არჩევანს აკეთებს თავის მეგობრებთან გადაღებული მხიარულ ფოტოს დადებასა და ადამიანის უფლებების დაცვასთან დაკავშირებულ პოსტის  დადებას შორის", KType = KeirseyTypes.INFP},
+            new TxtAnswerViewModel {Id = 95,OrderNo = 11, Questionid = 5, Text = "პოსტავს უამრავ სტატუსს ისეთი ტექსტით, რომელზეც სავარაუდოდ კითხავ რას ნიშნავს.", KType = KeirseyTypes.ENFJ},
+            new TxtAnswerViewModel {Id = 96,OrderNo = 12, Questionid = 5, Text = "ხშირად პოსტავს  სხვადასხვა ცნობილი ადამიანის გამონათქვამს.", KType = KeirseyTypes.INFJ},
+            new TxtAnswerViewModel {Id = 97,OrderNo = 13, Questionid = 5, Text = "Argues with the INFP’s humanitarian posts, just for the hell of it.", KType = KeirseyTypes.ENTP},
+            new TxtAnswerViewModel {Id = 98,OrderNo = 14, Questionid = 5, Text = "არაფერი დაუპოსტავს წლების განმავლობაში, მაგრამ სავარაუდოა რომ თითქმის ყველაფერს კითხულობს და თვალს ადევნებს.", KType = KeirseyTypes.INTP},
+            new TxtAnswerViewModel {Id = 99,OrderNo = 15, Questionid = 5, Text = "ჩექინდება  ძალიან ბევრ ივენთზე და ნიშნავს თავს ყველა სურათზე.", KType = KeirseyTypes.ENTJ},
+            new TxtAnswerViewModel {Id = 100,OrderNo = 16, Questionid = 5, Text = "პოსტავს  ცხოვრებისეულ სიახლეებს 3-5 დღის ინტერვალით. ფოტოებს ტვირთავს ძალიან იშვიათად, მხოლოდ იმ შემთხვევებში, როდესაც ფბ ამას ავტომატურად აკეთებს",KType = KeirseyTypes.INTJ},
 
 
             };
