@@ -42,19 +42,14 @@
                     var imagePath = "../../Content/PicAnswers/Q" + @Model.OrderNo + "/" + Model.PicAnswers[i].OrderNo + ".jpg";
                     var imageAlt = "img" + Model.PicAnswers[i].OrderNo;
 
-                    <div class="col-lg-3 grow">
+                    <div class="col-lg-3">
                         @Html.HiddenFor(it => Model.PicAnswers[i].Id)
                         @Html.HiddenFor(it => Model.PicAnswers[i].KType)
                         @Html.HiddenFor(it => Model.PicAnswers[i].Questionid)
                         @Html.HiddenFor(it => Model.PicAnswers[i].OrderNo)
                         @Html.CheckBoxFor(it => Model.PicAnswers[i].Checked)
 
-                        @*<img src="@imagePath" alt="@imageAlt" width="200" height="150" />*@
-
                         <img src="@imagePath" id="@imageAlt" alt="@imageAlt" width="200" height="150" />
-
-
-
 
                         @if (Model.PicAnswers[i].OrderNo % 4 == 0)
                             {  <br /><br /><br /> }

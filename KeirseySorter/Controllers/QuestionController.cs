@@ -77,7 +77,7 @@ namespace KeirseySorter.Controllers
 
             if (Request.Form["next"] != null)
             {
-                return question.Id == 7 ? RedirectToAction("QuestionnaireResult")
+                return question.Id == 5 ? RedirectToAction("QuestionnaireResult")
                                         : RedirectToAction("LoadQuestion", new { id = question.Id + 1 });
             }
 
