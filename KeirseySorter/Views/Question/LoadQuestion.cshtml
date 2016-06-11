@@ -1,14 +1,6 @@
 ﻿@model QuestionViewModel
 @using KeirseySorter.Models
 
-<script>
-    $('img.xxx').on('click', function () {
-        $(this).addClass('yyy') // Add class to the clicked image
-            .siblings().removeClass('yyy'); // Remove class from other sibling images
-    });
-</script>
-
-
 @{
     ViewBag.Title = "View";
 }
@@ -49,8 +41,10 @@
                         @Html.HiddenFor(it => Model.PicAnswers[i].OrderNo)
                         @Html.CheckBoxFor(it => Model.PicAnswers[i].Checked)
 
-                        <img src="@imagePath" id="@imageAlt" alt="@imageAlt" width="200" height="150" />
-
+                        <a href="@imagePath" data-lightbox="images">
+                            <img src="@imagePath" id="@imageAlt" alt="@imageAlt" width="200" height="150" />
+                        </a>
+                        
                         @if (Model.PicAnswers[i].OrderNo % 4 == 0)
                             {  <br /><br /><br /> }
                     </div>

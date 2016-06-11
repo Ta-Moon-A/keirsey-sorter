@@ -185,6 +185,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\lightbox.css" />
     <Content Include="Content\PicAnswers\Q1\1.jpg" />
     <Content Include="Content\PicAnswers\Q1\10.jpg" />
     <Content Include="Content\PicAnswers\Q1\11.jpg" />
@@ -279,6 +280,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lightbox.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
