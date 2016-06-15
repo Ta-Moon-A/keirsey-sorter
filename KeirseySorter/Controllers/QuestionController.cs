@@ -98,14 +98,7 @@ namespace KeirseySorter.Controllers
 
                 return View(result);
             }
-
-
-
-            return RedirectToAction("");
+           return RedirectToAction("");
         }
-
-
-
-
     }
 }

@@ -202,6 +202,6 @@ C:\Users\Tamo\Desktop\KS last version\KeirseySorter\bin\Microsoft.Owin.Security.
 C:\Users\Tamo\Desktop\KS last version\KeirseySorter\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Tamo\Desktop\KS last version\KeirseySorter\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Tamo\Desktop\KS last version\KeirseySorter\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Tamo\Desktop\KS last version\KeirseySorter\obj\Debug\KeirseySorter.csprojResolveAssemblyReference.cache
 C:\Users\Tamo\Desktop\KS last version\KeirseySorter\obj\Debug\KeirseySorter.dll
 C:\Users\Tamo\Desktop\KS last version\KeirseySorter\obj\Debug\KeirseySorter.pdb
+C:\Users\Tamo\Desktop\KS last version\KeirseySorter\obj\Debug\KeirseySorter.csprojResolveAssemblyReference.cache

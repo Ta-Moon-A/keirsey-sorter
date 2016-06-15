@@ -12,97 +12,97 @@ namespace KeirseySorter.Models
         {
             { KeirseyTypes.ENFP, new KeirseyTypeViewModel()
                                     {
-                                     TypeDesc = "მებრძოლი desc",
+                                     TypeDesc = "სწრაფად ფეთქებადი, მგრძნობიარე და თავისი საქმის მიმართ თავდადებული. უხეში და არასტანდარტული. ყველაფერს გააკეთებს მიზნის მისაღწევად. ",
                                      TypeName = "მებრძოლი"
                                     }
             },
             { KeirseyTypes.ENTJ, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "ფელდმარშალი desc",
-                                      TypeName = "ფელდმარშალი"
+                                      TypeDesc = "მტკიცე, ანალიტიკური და ბუნებრივი სოცლიალური დომინანტი.",
+                                      TypeName = "მეთაური"
                                     }
             },
             { KeirseyTypes.ENTP, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "გამომგონებელი desc",
+                                      TypeDesc = "ასეთი პიროვნებები შესაძლებლობებს აბსოლიტურად ყველგან ხედავენ და არც ერთ იდეას არ მიიჩნევენ იმდენად რთულად, რომ მისი განხორციელება ვერ შეძლონ. მათი სწრაფი გონება და სახასიათო ბუნება ყოველთვის იხსნის იმ პრობლემებისგან, რომელშიც ხშირად ყოფენ  ხოლმე თავს.",
                                      TypeName = "გამომგონებელი"
                                     }
             },
             { KeirseyTypes.ESFJ, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "მიმწოდებელი desc",
+                                      TypeDesc = "თავდაუზოგავი, მშფოთვარე და საყვარელი ადამიანებისთვის უზომოდ თავდადებული. ყველაზე მეტად სურს, რომ ადმაიანები, რომლებზეც ზრუნავს ბედნიერები და ჯანმრთელები იყვნენ. ",
                                      TypeName = "მიმწოდებელი"
                                     }
             },
             { KeirseyTypes.ESFP, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "შემსრულებელი desc",
+                                      TypeDesc = "ადაპტური, აწმყოზე ორიენტირებული და ზოგჯერ სრულიად გაუბედავი. მიუხედავად იმისა, რომ სიმამაცე ყოველთვის არ არის ამ პიროვნების წარმომჩენი თვისება, ის მაინც მზად არის გვერდით გადადოს თავისი  შიშები, როცა ეს მის საყავრელ ადამიანებს სჭირდებათ. ",
                                      TypeName = "შემსრულებელი"
                                     }
             },
             { KeirseyTypes.INFJ, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "მრჩეველი desc",
+                                      TypeDesc = "ბრძენია, დამკვირვებელი და შეუძლია ადვილად  გამოიცნოს სხისი ქმედების მოტივი. ის ძალიან ანალიტიკურია მაშინ, როცა სიმართლისა და სიცრუის ერთმანეთისგან გამიჯვნა უწევს. ",
                                      TypeName = "მრჩეველი"
                                     }
             },
             { KeirseyTypes.ESTJ, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "ზედამხედველი desc",
+                                      TypeDesc = "ძლიერი, მკაცრი და საყვარელი ადამიანების დამცველი. ის ყველა გადაწვეტილებას ლოგიკასა და ლოიალურობაზე დაყრდნობით იღებს - ეს ის ორი პრინციპია, რომელიც მის ცხოვრებას მართავს.",
                                      TypeName = "ზედამხედველი"
                                     }
             },
             { KeirseyTypes.ESTP, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "მფარველი desc",
+                                      TypeDesc = "კომუნიკაბელური, ათლეტური და ქმედებაზე ორიენტირებული პიროვნება. ",
                                      TypeName = "მფარველი"
                                     }
             },
             { KeirseyTypes.ISFJ, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "დამცველი desc",
+                                      TypeDesc = "მორჩილი, მზრუნველი და უზომოდ თავგანწირული იმ ადამიანების მიმართ, ვისი მორალისადმიც რწმენაც აქვს. ასეთი პიროვნება ორიენტირებულია დაეხმაროს მისთის საყვარელ ადამიანებს და ბედნიერია ამით.",
                                      TypeName = "დამცველი"
                                     }
             },
             { KeirseyTypes.ISTJ, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "ინსპექტორი desc",
+                                      TypeDesc = "პრინციპული, მტკიცე და უანგაროდ თავგანწირული სამართლიანობისთვის. ის უბრალო ადამიანია, არ  უყვარს ყურადღების ცენტრში ყოფნა.   შეუძლია წავიდეს ნებისმიერ რისკზე იმის დასაცავად, რაც მისთვის სამართლიანია.",
                                      TypeName = "ინსპექტორი"
                                     }
             },
             { KeirseyTypes.ISFP, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "კომპოზიტორი desc",
+                                      TypeDesc = "მოსიყვარულე, მზრუნველი  და თავდადებული. რეალურად, ის საკუთარ თავზე ჩაფიქრებული ადამიანია და მარტო ცხოვრება ყველაზე მეტად მას შეესაბამება. ",
                                      TypeName = "კომპოზიტორი"
                                     }
             },
             { KeirseyTypes.ISTP, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "ხელოსანი desc",
+                                      TypeDesc = "კოორდინირებული, რაციონალური და გარესამყაროს სისტემის კარგი ამთვისებელი. აქვს მიდრეკილება წესების დარღვევისა და ფიზიკური დაბრკოლებების დაძლევისა.",
                                      TypeName = "ხელოსანი"
                                     }
             },
             { KeirseyTypes.INFP, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "მკურნალი desc",
+                                      TypeDesc = "რომატიული, გამჭრიახი და ამთვისებელი იმ კავშირებისა, რომლებსაც სხვები გაურბიან.  ძლიერი, უშიშარი და ლოიალური,  როცა საჭიროება მოითხოვს.",
                                      TypeName = "მკურნალი"
                                     }
             },
             { KeirseyTypes.ENFJ, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "მასწავლებელი desc",
+                                      TypeDesc = "გულღია, ემპათიური და უბრალო, მას ნამდვიულად დამრიგებლური ხასიათი აქვს. ასეთ პიროვნებას შეუძლია კარგი დაინახოს ადამიანებში და თავი გასწიროს მათთვის  - არის ფრიად კაცთმოყვარე.",
                                      TypeName = "მასწავლებელი"
                                     }
             },
             { KeirseyTypes.INTP, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "არქიტექტორი desc",
+                                      TypeDesc = "დამცველი, ანალიტიკური და დაუღალავად ფილოსოფიური. ის ნებისმიერი გადაწყვეტილებისთვის ლოგიკას იშველიებს და სასოწარკვეთა იპყრობს, როცა ლოგიკას არ ექვემდებარება სიტუაცია. ",
                                      TypeName = "არქიტექტორი"
                                     }
             },
             { KeirseyTypes.INTJ, new KeirseyTypeViewModel()
                                     {
-                                      TypeDesc = "საიდუმლო ლიდერი desc",
+                                      TypeDesc = "ამ ტიპს მიეკუთნება მკაცრი და ცივი ადამიანი, თუმცა მიუხედავად ცივი და თავშეკავებული ბუნებისა, ისინი ზოგჯერ შეიძლება იყვნენ ძალზედ ლოიალურები. ინტიუციური და ფარულად მოქმედი პიროვნება.",
                                      TypeName = "საიდუმლო ლიდერი"
                                     }
             }
@@ -206,7 +206,7 @@ namespace KeirseySorter.Models
             new TxtAnswerViewModel {Id = 94,OrderNo = 10, Questionid = 5, Text = "არჩევანს აკეთებს თავის მეგობრებთან გადაღებული მხიარულ ფოტოს დადებასა და ადამიანის უფლებების დაცვასთან დაკავშირებულ პოსტის  დადებას შორის", KType = KeirseyTypes.INFP},
             new TxtAnswerViewModel {Id = 95,OrderNo = 11, Questionid = 5, Text = "პოსტავს უამრავ სტატუსს ისეთი ტექსტით, რომელზეც სავარაუდოდ კითხავ რას ნიშნავს.", KType = KeirseyTypes.ENFJ},
             new TxtAnswerViewModel {Id = 96,OrderNo = 12, Questionid = 5, Text = "ხშირად პოსტავს  სხვადასხვა ცნობილი ადამიანის გამონათქვამს.", KType = KeirseyTypes.INFJ},
-            new TxtAnswerViewModel {Id = 97,OrderNo = 13, Questionid = 5, Text = "Argues with the INFP’s humanitarian posts, just for the hell of it.", KType = KeirseyTypes.ENTP},
+            new TxtAnswerViewModel {Id = 97,OrderNo = 13, Questionid = 5, Text = "ყველა პოსტზე შეუძლია იკამათოს ყოველგვარი მიზეზის გარეშე.", KType = KeirseyTypes.ENTP},
             new TxtAnswerViewModel {Id = 98,OrderNo = 14, Questionid = 5, Text = "არაფერი დაუპოსტავს წლების განმავლობაში, მაგრამ სავარაუდოა რომ თითქმის ყველაფერს კითხულობს და თვალს ადევნებს.", KType = KeirseyTypes.INTP},
             new TxtAnswerViewModel {Id = 99,OrderNo = 15, Questionid = 5, Text = "ჩექინდება  ძალიან ბევრ ივენთზე და ნიშნავს თავს ყველა სურათზე.", KType = KeirseyTypes.ENTJ},
             new TxtAnswerViewModel {Id = 100,OrderNo = 16, Questionid = 5, Text = "პოსტავს  ცხოვრებისეულ სიახლეებს 3-5 დღის ინტერვალით. ფოტოებს ტვირთავს ძალიან იშვიათად, მხოლოდ იმ შემთხვევებში, როდესაც ფბ ამას ავტომატურად აკეთებს",KType = KeirseyTypes.INTJ},
@@ -265,7 +265,7 @@ namespace KeirseySorter.Models
         [Description(" არქიტექტორი")] //architect
         INTP = 14,
 
-        [Description("ფელდმარშალი")] //fieldmarshal
+        [Description("მეთაური")] //fieldmarshal
         ENTJ = 15,
 
         [Description("საიდუმლო ლიდერი")] // mastermind

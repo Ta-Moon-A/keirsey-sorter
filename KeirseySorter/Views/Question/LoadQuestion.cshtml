@@ -6,6 +6,18 @@
 }
 
 
+<script>
+    function submitWith() {
+        var checkedCount = $("input:checked").length;
+        var valid = checkedCount > 0;
+        if (!valid) {
+            $('#validationMessage').html('გთხოვთ აირჩიოთ მინიმუმ ერთი სავარაუდო პასუხი! ');
+        }
+        return valid;
+    }
+
+</script>
+
 @using (Html.BeginForm("LoadQuestion", "Question", FormMethod.Post))
 {
 
@@ -70,20 +82,24 @@
             }
         </div>
 
-        <div class="col-lg-12 pull-left">
-            <label></label>
-        </div>
+       
 
         var nextButtonValue = @Model.Id != 5 ? "შემდეგი" : "დასრულება";
         var prevButtonType = @Model.Id == 1 ? "hidden" : "submit";
 
+        <div style="margin-left : 50px; color:red; text-align:center">
+            <span  id="validationMessage" />
+            <br />
+        </div>
+      
+        <br />
 
         <div class="col-lg-12 pull-left ">
             <div class="pull-left prev">
                 <input id="Submit1" type="@prevButtonType" value="წინა" class="btn btn-default" name="prev" />
             </div>
             <div class="pull-right next">
-                <input id="Submit2" type="submit" value="@nextButtonValue" class="btn btn-default" name="next" />
+                <input id="Submit2" type="submit" value="@nextButtonValue" class="btn btn-default" name="next" onclick="return submitWith();" />
             </div>
         </div>
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,7 @@ namespace KeirseySorter.Services
         public static QuestionnaireResultViewModel CalculateType(List<QuestionViewModel> answeredData)
         {
 
-            Dictionary<int, double> ktFuzzySet = new Dictionary<int, double>();
+            Dictionary<int, Tuple<double,int>> ktFuzzySet = new Dictionary<int, Tuple<double, int>>();
 
 
             foreach (var question in answeredData)
@@ -32,19 +33,25 @@ namespace KeirseySorter.Services
 
                     if (!ktFuzzySet.ContainsKey((int)answer.KType))
                     {
-                        ktFuzzySet.Add((int)answer.KType, typeGrade);
+                        
+                        ktFuzzySet.Add((int)answer.KType, new Tuple<double, int> (typeGrade, typeGrade == 0 ? 0 : 1));
                     }
                     else
                     {
-                        ktFuzzySet[(int)answer.KType] += typeGrade;
+                        if(ktFuzzySet[(int)answer.KType].Item1 < typeGrade)
+                        {
+                            var counter = ktFuzzySet[(int)answer.KType].Item2;
+                            ktFuzzySet[(int)answer.KType] = new Tuple<double, int>(typeGrade, counter++);
+                        }
                     }
-
-                }
-
+                 }
             }
 
 
-            var orderedanswers = ktFuzzySet.OrderByDescending(pair => pair.Value).Take(2).ToList();
+            var orderedanswers = ktFuzzySet.OrderByDescending(pair => pair.Value.Item1)
+                                           .OrderByDescending(r => r.Value.Item2)
+                                           .Take(2).ToList();
+
 
             var result = new QuestionnaireResultViewModel()
             {
