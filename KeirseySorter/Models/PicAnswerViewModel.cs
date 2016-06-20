@@ -10,6 +10,7 @@ namespace KeirseySorter.Models
     {
         public int Id { get; set; }
         public int OrderNo { get; set; }
+        public string PicDescription { get; set; }
         public Image Data { get; set; }
         public int Questionid { get; set; }
         public bool Checked { get; set; }

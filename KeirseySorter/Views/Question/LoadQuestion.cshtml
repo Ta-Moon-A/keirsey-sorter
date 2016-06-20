@@ -45,19 +45,29 @@
 
                     var imagePath = "../../Content/PicAnswers/Q" + @Model.OrderNo + "/" + Model.PicAnswers[i].OrderNo + ".jpg";
                     var imageAlt = "img" + Model.PicAnswers[i].OrderNo;
+                    var labelId = "PicAnswers_" + i + "__Questionid";
 
-                    <div class="col-lg-3">
+                    <div  class="col-lg-3">
                         @Html.HiddenFor(it => Model.PicAnswers[i].Id)
                         @Html.HiddenFor(it => Model.PicAnswers[i].KType)
                         @Html.HiddenFor(it => Model.PicAnswers[i].Questionid)
                         @Html.HiddenFor(it => Model.PicAnswers[i].OrderNo)
-                        @Html.CheckBoxFor(it => Model.PicAnswers[i].Checked)
+                        @Html.HiddenFor(it => Model.PicAnswers[i].PicDescription)
+                        @Html.CheckBoxFor(it => Model.PicAnswers[i].Checked, new { @class = "styled"})
+                    
+                        @if (@Model.PicAnswers[i].PicDescription == null || @Model.PicAnswers[i].PicDescription.Length < 5)
+                        {
+                            <label for="@labelId">@Model.PicAnswers[i].PicDescription &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        }
+                        else {
+                              <label for="@labelId">@Model.PicAnswers[i].PicDescription</label>
+                        }
+                      
+                       <a href="@imagePath" data-lightbox="images">
+                           <img src="@imagePath" id="@imageAlt" alt="@imageAlt" width="200" height="150" />
+                       </a>
 
-                        <a href="@imagePath" data-lightbox="images">
-                            <img src="@imagePath" id="@imageAlt" alt="@imageAlt" width="200" height="150" />
-                        </a>
-                        
-                        @if (Model.PicAnswers[i].OrderNo % 4 == 0)
+                       @if (Model.PicAnswers[i].OrderNo % 4 == 0)
                             {  <br /><br /><br /> }
                     </div>
                 }

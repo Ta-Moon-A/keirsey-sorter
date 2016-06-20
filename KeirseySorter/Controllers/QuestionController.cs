@@ -11,7 +11,7 @@ namespace KeirseySorter.Controllers
 {
     public class QuestionController : Controller
     {
-        // GET: Question
+       
         public ActionResult LoadQuestion(string id)
         {
             int questionId;
