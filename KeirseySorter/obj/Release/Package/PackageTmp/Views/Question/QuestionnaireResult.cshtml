@@ -1,0 +1,44 @@
+﻿@model KeirseySorter.Models.QuestionnaireResultViewModel
+
+@{
+    ViewBag.Title = "QuestionnaireResult";
+}
+<div class="col-lg-5 pull-left">
+    <h3>თქვენი პირველადი ტემპერამენტია :</h3>
+</div>
+
+<div class="col-lg-7 pull-left">
+    <h3>@Model.PrimaryType.TypeName</h3>
+</div>
+
+
+<div class="col-lg-5 pull-left">
+    <h3>თქვენი მეორადი ტემპერამენტია :</h3>
+</div>
+<div class="col-lg-7 pull-left">
+    <h3>@Model.SecondaryType.TypeName</h3>
+</div>
+
+
+
+<div class="col-lg-12 pull-left" style="margin-top: 50px">
+    <h4>@Model.PrimaryType.TypeName  -   @Model.PrimaryType.TypeDesc
+        </h4>
+</div>
+
+<div class="col-lg-12 pull-left">
+    <h4>@Model.SecondaryType.TypeName   -   @Model.SecondaryType.TypeDesc
+    </h4>
+</div>
+
+
+
+<br />
+<div>
+    <div class="pull-right">
+        <a class="btn btn-default" href='http://@System.Web.HttpContext.Current.Request.Url.Authority'>კითხვარის დაწყება</a>
+    </div>
+
+</div>
+
+
