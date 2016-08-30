@@ -45,7 +45,7 @@
 
                     var imagePath = "../../Content/PicAnswers/Q" + @Model.OrderNo + "/" + Model.PicAnswers[i].OrderNo + ".jpg";
                     var imageAlt = "img" + Model.PicAnswers[i].OrderNo;
-                    var labelId = "PicAnswers_" + i + "__Questionid";
+                    var labelId = "QuestionId" + @Model.Id + "answerId" + i ;
 
                     <div  class="col-lg-3">
                         @Html.HiddenFor(it => Model.PicAnswers[i].Id)
@@ -53,8 +53,9 @@
                         @Html.HiddenFor(it => Model.PicAnswers[i].Questionid)
                         @Html.HiddenFor(it => Model.PicAnswers[i].OrderNo)
                         @Html.HiddenFor(it => Model.PicAnswers[i].PicDescription)
-                        @Html.CheckBoxFor(it => Model.PicAnswers[i].Checked, new { @class = "styled"})
-                    
+                        @Html.CheckBoxFor(m => Model.PicAnswers[i].Checked, new { id = string.Format("QuestionId{0}answerId{1}", @Model.Id,i) })
+
+
                         @if (@Model.PicAnswers[i].PicDescription == null || @Model.PicAnswers[i].PicDescription.Length < 5)
                         {
                             <label for="@labelId">@Model.PicAnswers[i].PicDescription &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -76,15 +77,19 @@
             {
                 for (var i = 0; i < Model.TxtAnswers.Count; i++)
                 {
-                    <div class="col-lg-12">
+                    var labelId = "QuestionId" + @Model.Id + "answerId" + i;
+
+                    <div >
                         @Html.HiddenFor(it => Model.TxtAnswers[i].Id)
                         @Html.HiddenFor(it => Model.TxtAnswers[i].KType)
-                        @Html.CheckBoxFor(it => Model.TxtAnswers[i].Checked)
                         @Html.HiddenFor(it => Model.TxtAnswers[i].OrderNo)
                         @Html.HiddenFor(it => Model.TxtAnswers[i].Questionid)
                         @Html.HiddenFor(it => Model.TxtAnswers[i].Text)
-
-                        <span>&nbsp;&nbsp;@Model.TxtAnswers[i].Text</span>
+                        
+                        
+                        @* <span>&nbsp;&nbsp;@Model.TxtAnswers[i].Text</span>*@
+                        <label for="@labelId" style="font-weight : normal;">@Html.CheckBoxFor(it => Model.TxtAnswers[i].Checked, new { id = string.Format("QuestionId{0}answerId{1}", @Model.Id, i) })
+&nbsp;&nbsp;@Model.TxtAnswers[i].Text</label>
                         <br />
                         <br />
                     </div>
